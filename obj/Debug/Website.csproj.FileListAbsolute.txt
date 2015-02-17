@@ -16,3 +16,9 @@ D:\Documents\Code\Portefolio\Website\bin\Website.pdb
 D:\Documents\Code\Portefolio\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
 D:\Documents\Code\Portefolio\Website\obj\Debug\Website.dll
 D:\Documents\Code\Portefolio\Website\obj\Debug\Website.pdb
+D:\Documents\Code\Portefolio\bin\Website.dll.config
+D:\Documents\Code\Portefolio\bin\Website.dll
+D:\Documents\Code\Portefolio\bin\Website.pdb
+D:\Documents\Code\Portefolio\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\Documents\Code\Portefolio\obj\Debug\Website.dll
+D:\Documents\Code\Portefolio\obj\Debug\Website.pdb
