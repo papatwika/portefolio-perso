@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Xavier Marleau</title>
+    <link rel="icon" href="img/favicon.ico" />
     <meta name="description" content="">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="css/custom.css"/>
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Useful tool to detect browser features (degrade gracefully)  -->
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="Scripts/vendor/modernizr-2.6.2.min.js"></script>
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -22,93 +24,96 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Useful plugins/snippets -->
-    <script src="js/plugins.js"></script>
+    <script src="Scripts/plugin.js"></script>
 
     <!-- Main JavaScript (your custom code) -->
-    <script src="js/main.js"></script>
+    <script src="Scripts/main.js"></script>
 
 </head>
 <body>
-
-    <nav class="navbar navbar-default">
+    
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <!--<div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
-            </div>-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Accueil</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#portefolio">Portefolio</a></li>
-                    <li><a href="#loisirs">Loisirs, intérêts et mentions</a></li>
+                    <li class="active"><a href="#" onclick="moveToSection('#')">Accueil</a></li>
+                    <li><a href="#experience" onclick="moveToSection('#experience')">Expérience</a></li>
+                    <li><a href="#portefolio" onclick="moveToSection('#portefolio')">Portefolio</a></li>
+                    <li><a href="#loisirs" onclick="moveToSection('#loisirs')">Loisirs, intérêts et mentions</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
-    <div class="container">
+    <!-- Accueil section -->
+    <div class="section" id="accueil">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>Accueil</h1>
+                    <p id="messageaccueil">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="img/me.jpg" alt="Photo de moi" />
+                </div>
+                <div class="col-sm-4">
+                    <h1>Contact</h1>
+                    <form method="POST" action="////formspree.io/xavier.marleau@usherbrooke.ca">
+                        <input type="email" name="_replyto" placeholder="Your email">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expérience section -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="row">
+                <h1>Expérience</h1>
+                <div class="exp col-sm-12">
+                    <p>Connaissances particulières</p>
+                </div>
+                <div class="exp col-sm-12">
+                </div>
+                <div class="exp col-sm-12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portefolio section -->
+    <div class="section" id="portefolio">
+        <div class="container">
+            <div class="row">
+                <h1>Portefolio</h1>
+                <div class="premier-portef portef col-sm-3">
+                    <p>fdeyouvbadfiuysvsuiyvuiyvd iubiyubgiysd</p>
+                </div>
+                <div class="portef col-sm-offset-1 col-sm-3">
+                    <p>fdeyouvbadfiuysvsuiyvuiyvd iubiyubgiysd</p>
+                </div>
+                <div class="portef col-sm-offset-1 col-sm-3">
+                    <p>fdeyouvbadfiuysvsuiyvuiyvd iubiyubgiysd</p>
+                </div>
+            </div>
+        </div>
+    </div>
         
-        <!-- Accueil section -->
-        <div id="accueil">
-            <div class="col-md-5">
-                <h1>Accueil</h1>
-                <p class="messageaccueil">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-            </div>
-            <div class="col-md-3">
-                <br/><br/><br>
-                <img class="img-responsive" src="img/me.jpg" alt="Photo de moi"/>
-            </div>
-            <div class="col-md-4">
-                <h1>Contact</h1>
-                <form method="POST" action="////formspree.io/xavier.marleau@usherbrooke.ca">
-                    <input type="email" name="_replyto" placeholder="Your email">
-                    <input type="text" name="_gotcha" style="display:none">
-                    <textarea name="message" rows="5" placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
+    <!-- Loisirs section -->
+    <div class="section" id="loisirs">
+        <div class="container">
+            <div class="row">
+                <h1>Loisir, intérêt et mention</h1>
+                <div class="loisir col-sm-12">
+
+                </div>
             </div>
         </div>
-
-        <!-- Expérience section -->
-        <div id="experience">
-            <h1>Expérience</h1>
-            <div class="exp col-md-12">
-                <p>Connaissances particulières</p>
-            </div>
-            <div class="exp col-md-12">
-            </div>
-            <div class="exp col-md-12">
-            </div>
-        </div>
-
-        <!-- Portefolio section -->
-        <div id="portefolio">
-            <h1>Portefolio</h1>
-            <div class="portef col-md-4">
-                
-            </div>
-            <div class="portef col-md-4">
-
-            </div>
-            <div class="portef col-md-4">
-
-            </div>
-        </div>
-        
-        <!-- Loisirs section -->
-        <div id="loisirs">
-            <h1>Loisir, intérêt et mention</h1>
-            <div class="loisir col-md-12">
-                
-            </div>
-        </div>
-
     </div>
 
 </body>
