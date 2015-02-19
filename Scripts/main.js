@@ -14,3 +14,29 @@ function moveToSection(id) {
         scrollTop: ($(id).offset().top - $("#menu").height())
     }, 800);
 };
+
+var activeId = "";
+
+window.onscroll = function () {
+
+    if (window.pageYOffset + $("#menu").height() >= $("#loisirs").offset().top && activeId != "#loisirsButton") {
+        $("#loisirsButton").addClass("active");
+        $(activeId).removeClass("active");
+        activeId = "#loisirsButton";
+    }
+    else if (window.pageYOffset + $("#menu").height() >= $("#portefolio").offset().top && activeId != "#portefolioButton") {
+        $("#portefolioButton").addClass("active");
+        $(activeId).removeClass("active");
+        activeId = "#portefolioButton";
+    }
+    else if (window.pageYOffset + $("#menu").height() >= $("#experience").offset().top && activeId != "#experienceButton") {
+        $("#experienceButton").addClass("active");
+        $(activeId).removeClass("active");
+        activeId = "#experienceButton";
+    }
+    else if (window.pageYOffset + $("#menu").height() < $("#experience").offset().top && activeId != "#accueilButton") {
+        $("#accueilButton").addClass("active");
+        $(activeId).removeClass("active");
+        activeId = "#accueilButton";
+    };
+};
