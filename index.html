@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Xavier Marleau</title>
     <link rel="icon" href="img/favicon.ico" />
-    <meta name="description" content="">
+    <meta name="description" content="Site personnel de Xavier Marleau">
+    <meta property="og:title" content="Xavier Marleau"/>
+    <meta property="og:url" content="http://www.xaviermarleau.com" />
+    <meta property="og:image" content="http://www.xaviermarleau.com/img/me.jpg" />
+    <meta property="og:description" content="Site personnel de Xavier Marleau" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -31,7 +35,8 @@
 
 </head>
 <body>
-    
+    <div id="fb-root"></div>
+
     <!-- Navbar -->
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -53,18 +58,20 @@
             <div class="row">
                 <div class="col-sm-5">
                     <div id="messageaccueil">
-                        <p>Finissant au baccalauréat en informatique à l'université de Sherbrooke, je serais bientôt disponible pour un poste à temps plein dans votre entreprise.</p>
+                        <p>Finissant au baccalauréat en informatique à l'université de Sherbrooke, je serai bientôt disponible pour un poste à temps plein dans votre entreprise.</p>
                         <p>Je travail actuellement sur plusieurs <a onclick="moveToSection('#portefolio')">projets</a> et j'ai une passion pour <a onclick="moveToSection('#loisirs')">les sports</a> et <a onclick="moveToSection('#loisirs')">les jeux vidéos</a>.</p>
                         <p>Vous désirez en savoir davantage à mon sujet? Vous trouverez ci-bas mon curriculum vitae.</p>
                         <p>Vous avez des questions plus spécifique ou désirez me rejoindre? Entrez votre email et votre message dans la section "Contact" à votre droite.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
                     <img class="img-responsive" src="img/me.jpg" alt="Photo de moi" />
                 </div>
                 <div class="col-sm-4">
                     <h1 class="titre">Contact</h1>
-                    <form method="POST" action="////formspree.io/xavier.marleau@usherbrooke.ca">
+                    <form method="POST" action="http://formspree.io/xavier.marleau@usherbrooke.ca">
                         <input type="email" name="_replyto" placeholder="Your email">
                         <input type="text" name="_gotcha" style="display:none">
                         <textarea name="message" rows="5" placeholder="Your message"></textarea>
@@ -167,7 +174,7 @@
                     <div>Objectif principal: amélioration de la performance d'un serveur Minecraft personnalisé en C++.</div>
                     <span>Code source: </span>
                     <a href="https://github.com/mc-server/MCServer" target="_blank">
-                        <img class="imageOnClick" src="img/minecraft.png"/>
+                        <img class="imageOnClick" src="img/minecraft.png" alt="Code source"/>
                     </a>
                 </div>
                 <div class="portef col-sm-offset-1 col-sm-3">
@@ -175,7 +182,7 @@
                     <div>Objectif principal: création d'un outil pour générer des scènes de dialogue en 2D.</div>
                     <span>Site web: </span>
                     <a href="http://www.cardboard-utopia.com/" target="_blank">
-                        <img class="imageOnClick" src="img/cardboardutopia.jpg" />
+                        <img class="imageOnClick" src="img/cardboardutopia.jpg" alt="Site web"/>
                     </a>
                 </div>
                 <div class="portef col-sm-offset-1 col-sm-3">
