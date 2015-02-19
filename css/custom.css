@@ -86,13 +86,12 @@ button:hover {
 
 .exp {
     background-color: #AAEEFF;
-    height: 200px;
     border-color: darkslategrey;
     border-style: outset;
     border-width: thick;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 .premier-portef {
@@ -101,30 +100,33 @@ button:hover {
 
 .portef {
     background-color: #AAFF99;
-    height: 200px;
     border-color: darkslategrey;
     border-style: outset;
     border-width: thick;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 1%;
+    padding-top: 1%;
 }
 
 .loisir {
     background-color: #AAEEFF;
-    height: 200px;
     border-color: darkslategrey;
     border-style: outset;
     border-width: thick;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 .container-fluid {
     border-bottom: 1px;
     border-style: solid;
     border-color: black;
+}
+
+.imageOnClick {
+    height: 32px;
+    width: 32px;
 }
 
 #messageaccueil {
@@ -158,4 +160,8 @@ button:hover {
     min-height: 500px;
     background-image: url(../img/blue_binary.jpg);
     background-size: contain;
+}
+
+h3 {
+    text-decoration: underline;
 }

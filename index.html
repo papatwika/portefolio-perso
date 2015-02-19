@@ -37,10 +37,10 @@
         <div class="container">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="accueilButton"><a href="#" onclick="moveToSection('#accueil')">Accueil</a></li>
-                    <li id="experienceButton"><a href="#experience" onclick="moveToSection('#experience')">Expérience</a></li>
-                    <li id="portefolioButton"><a href="#portefolio" onclick="moveToSection('#portefolio')">Portefolio</a></li>
-                    <li id="loisirsButton"><a href="#loisirs" onclick="moveToSection('#loisirs')">Loisirs, intérêts et mentions</a></li>
+                    <li id="accueilButton"><a onclick="moveToSection('#accueil')">Accueil</a></li>
+                    <li id="experienceButton"><a onclick="moveToSection('#experience')">Expérience</a></li>
+                    <li id="portefolioButton"><a onclick="moveToSection('#portefolio')">Portefolio</a></li>
+                    <li id="loisirsButton"><a onclick="moveToSection('#loisirs')">Loisirs, intérêts et mentions</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,12 @@
             <h1 class="titre">Accueil</h1>
             <div class="row">
                 <div class="col-sm-5">
-                    <p id="messageaccueil">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+                    <div id="messageaccueil">
+                        <p>Finissant au baccalauréat en informatique à l'université de Sherbrooke, je serais bientôt disponible pour un poste à temps plein dans votre entreprise.</p>
+                        <p>Je travail actuellement sur plusieurs <a onclick="moveToSection('#portefolio')">projets</a> et j'ai une passion pour <a onclick="moveToSection('#loisirs')">les sports</a> et <a onclick="moveToSection('#loisirs')">les jeux vidéos</a>.</p>
+                        <p>Vous désirez en savoir davantage à mon sujet? Vous trouverez ci-bas mon curriculum vitae.</p>
+                        <p>Vous avez des questions plus spécifique ou désirez me rejoindre? Entrez votre email et votre message dans la section "Contact" à votre droite.</p>
+                    </div>
                 </div>
                 <div class="col-sm-3">
                     <img class="img-responsive" src="img/me.jpg" alt="Photo de moi" />
@@ -76,11 +81,77 @@
             <h1 class="titre">Expérience</h1>
             <div class="row">
                 <div class="exp col-sm-12">
-                    <p>Connaissances particulières</p>
+                    <h3>Formation scolaire</h3>
+                    <h4>Baccalauréat en informatique (Programme coopératif) 2011 à 2014</h4>
+                    <ul>
+                        <li>Université de Sherbrooke (Sherbrooke)</li>
+                    </ul>
+                    <h4>Diplôme d’étude collégiale en sciences humaines 2008 à 2010</h4>
+                    <ul>
+                        <li>Profil gestion des organisations (administration)</li>
+                        <li>Collège Montmorency (Laval)</li>
+                    </ul>
                 </div>
                 <div class="exp col-sm-12">
+                    <h3>Connaissances particulières</h3>
+                    <ul>
+                        <li>Langages de programmation (ordonné par niveau de connaissance):\nC#, PHP, Python, HTML, CSS, SQL, WPF, Javascript, C++, Java, assembleur, VBA</li>
+                        <li>Utilisation de logiciels d’éditeurs de jeu: RPG Maker 2003, RPG Maker XP</li>
+                        <li>Utilisation de logiciel: Code Blocks, UltraEdit Studio, DB Solo, MySQL, WinMerge, WinCacheGrind, Access, Notepad++, Microsoft Visual Studio 10-12-13, perforce, TFS, SQL server</li>
+                        <li>Langues parlées et écrites: français et anglais</li>
+                    </ul>
                 </div>
                 <div class="exp col-sm-12">
+                    <h3>Expérience professionnelle</h3>
+
+                    <h4>Programmeur généraliste (4e stage temps plein) mai à août 2014</h4>
+                    <h5>COMERCO SERVICE INC (Laval)</h5>
+                    <ul>
+                        <li>Automatisation d’opérations manuelles effectuées par les employés du centre contact. Utilisation d’un Web Service Reference</li>
+                        <li>Ajout de tests unitaires vérifiant le comportement des nouvelles fonctionnalités</li>
+                        <li>Travail dans un environnement utilisant Entity Framework 6</li>
+                    </ul>
+                    
+                    <h4>Programmeur Généraliste (3e stage temps plein) septembre 2013 à décembre 2013</h4>
+                    <h5>UBISOFT ENTERTAINMENT (Montréal)</h5>
+                    <ul>
+                        <li>Développer un module python pour récupérer l’état et la latence des bases de données du programme principal</li>
+                        <li>Ajouter des fonctionnalités diverses à différents modules python</li>
+                        <li>Création de tests unitaires et fonctionnels associés aux fonctionnalités ajoutées</li>
+                        <li>Travaillé avec la méthode Agile (Scrum) et revue de code par les pairs</li>
+                    </ul>
+                    
+                    <h4>Programmeur Web (2e stage temps plein) janvier 2013 à avril 2013</h4>
+                    <h5>LOGISTEC CORPORATION (Montréal)</h5>
+                    <ul>
+                        <li>Développer une classe PHP générant des rapports en format HTML</li>
+                        <li>Ajouter des fonctionnalités JavaScript pour avoir des rapports dynamique</li>
+                        <li>Optimiser une application générant un questionnaire</li>
+                        <li>Travaillé dans un environnement LAMP</li>
+                    </ul>
+                    
+                    <h4>Programmeur Web (1er stage temps plein) mai 2012 à août 2012</h4>
+                    <h5>LOGISTEC CORPORATION (Montréal)</h5>
+                    <ul>
+                        <li>Assister l’équipe de programmeur dans le développement des applications web de l’entreprise</li>
+                        <li>Reformatage du modèle générant les rapports en document PDF ou MS Word</li>
+                        <li>Traduction d’une des applications pour la rendre bilingue</li>
+                    </ul>
+                    
+                    <h4>Cuisiner et chef de quart (temps partiel/plein) août 2007 à août 2011</h4>
+                    <h5>PIZZA HUT (Laval)</h5>
+                    <ul>
+                        <li>Former les nouveaux employés au rudiment de la cuisine, du service au comptoir et de l’entretien</li>
+                        <li>Gérer le restaurant, prise d’inventaire des aliments et transport des dépôts à la banque</li>
+                        <li>S’occuper des plaintes et de l’embauche des cuisiniers</li>
+                    </ul>
+                    
+                    <h4>Agent de sécurité (temps partiel) septembre 2009 à janvier 2010</h4>
+                    <h5>GARDA (Montréal)</h5>
+                    <ul>
+                        <li>Escorte du personnel de la Banque National pour leur sécurité</li>
+                        <li>Surveillance de biens et de travaux sur des chantiers de construction ou dans des boutiques</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -92,13 +163,23 @@
             <h1 class="titre">Portefolio</h1>
             <div class="row">
                 <div class="premier-portef portef col-sm-3">
-                    <p>fdeyouvbadfiu ysvsuiyvuiyvd iubiyubgiysd</p>
+                    <h4>Projet en cours: MCserver</h4>
+                    <div>Objectif principal: amélioration de la performance d'un serveur Minecraft personnalisé en C++.</div>
+                    <span>Code source: </span>
+                    <a href="https://github.com/mc-server/MCServer" target="_blank">
+                        <img class="imageOnClick" src="img/minecraft.png"/>
+                    </a>
                 </div>
                 <div class="portef col-sm-offset-1 col-sm-3">
-                    <p>fdeyouvbadfi uysvsuiyvuiyvd iubiyubgiysd</p>
+                    <h4>Projet en cours: War of Zodiarcs</h4>
+                    <div>Objectif principal: création d'un outil pour générer des scènes de dialogue en 2D.</div>
+                    <span>Site web: </span>
+                    <a href="http://www.cardboard-utopia.com/" target="_blank">
+                        <img class="imageOnClick" src="img/cardboardutopia.jpg" />
+                    </a>
                 </div>
                 <div class="portef col-sm-offset-1 col-sm-3">
-                    <p>fdeyouvbadf iuysvsuiyvuiyvd iubiyubgiysd</p>
+                    <span>À venir...</span>
                 </div>
             </div>
         </div>
@@ -107,9 +188,25 @@
     <!-- Loisirs section -->
     <div class="section" id="loisirs">
         <div class="container">
-            <h1 class="titre">Loisir, intérêt et mention</h1>
+            <h1 class="titre">Loisirs, intérêts et implications</h1>
             <div class="row">
                 <div class="loisir col-sm-12">
+                    <h3>Implications sportives</h3>
+                    <ul>
+                        <li>Jouer trois saisons dans l’équipe de crosse au champ du collège Montmorency: Compétition inter collégiale, demi-finale du championnat et voyage à New-York pour un tournoi</li>
+                        <li>Participer deux saisons dans une ligue d’hiver de crosse au champs intérieur à Laval. (niveau senior)</li>
+                        <li>Jouer une saison dans l'équipe de crosse au champ de l'université de Sherbrooke: Champion interuniversitaire</li>
+                        <li>Jouer pendant cinq années au badminton pour le club élite de Laval ainsi que dans des camps d’été</li>
+                    </ul>
+                    <h3>Loisirs et intérêt</h3>
+                    <ul>
+                        <li>Musculation en salle d’entrainement, pour un total de cinq ans en intermittence</li>
+                        <li>Une année d'expérience en CrossFit</li>
+                        <li>Passion pour les sports en général et la musculation</li>
+                        <li>Passion pour les jeux vidéo</li>
+                        <li>Intérêt pour le golf</li>
+                        <li>Intérêt pour la nutrition</li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -10,31 +10,29 @@ ga('create', 'UA-59930311-1', 'auto');
 ga('send', 'pageview');
 
 function moveToSection(id) {
-    $('html, body').animate({
-        scrollTop: ($(id).offset().top - $("#menu").height())
-    }, 800);
+    $('html, body').animate({ scrollTop: $(id).offset().top - $("#menu").height()}, 800);
 };
 
 var activeId = "";
 
 window.onscroll = function () {
 
-    if (window.pageYOffset + $("#menu").height() >= $("#loisirs").offset().top && activeId != "#loisirsButton") {
+    if (window.pageYOffset + $("#menu").height() >= $("#loisirs").offset().top && activeId != "#loisirsButton" && $("#loisirs").offset().top + $("#loisirs").height() > window.pageYOffset) {
         $("#loisirsButton").addClass("active");
         $(activeId).removeClass("active");
         activeId = "#loisirsButton";
     }
-    else if (window.pageYOffset + $("#menu").height() >= $("#portefolio").offset().top && activeId != "#portefolioButton") {
+    else if (window.pageYOffset + $("#menu").height() >= $("#portefolio").offset().top && activeId != "#portefolioButton" && $("#portefolio").offset().top + $("#portefolio").height() > window.pageYOffset) {
         $("#portefolioButton").addClass("active");
         $(activeId).removeClass("active");
         activeId = "#portefolioButton";
     }
-    else if (window.pageYOffset + $("#menu").height() >= $("#experience").offset().top && activeId != "#experienceButton") {
+    else if (window.pageYOffset + $("#menu").height() >= $("#experience").offset().top && activeId != "#experienceButton" && $("#experience").offset().top + $("#experience").height() > window.pageYOffset) {
         $("#experienceButton").addClass("active");
         $(activeId).removeClass("active");
         activeId = "#experienceButton";
     }
-    else if (window.pageYOffset + $("#menu").height() < $("#experience").offset().top && activeId != "#accueilButton") {
+    else if (window.pageYOffset + $("#menu").height() < $("#experience").offset().top && activeId != "#accueilButton" && $("#experience").offset().top + $("#experience").height() > window.pageYOffset) {
         $("#accueilButton").addClass("active");
         $(activeId).removeClass("active");
         activeId = "#accueilButton";
