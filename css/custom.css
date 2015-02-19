@@ -61,6 +61,17 @@ button:hover {
     border-color: #359173;
 }
 
+.titre {
+    color: black;
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    display: inline-block;
+    padding: 0.6%;
+}
+
 .active {
     background-color: grey;
     color: white;
@@ -74,9 +85,9 @@ button:hover {
 }
 
 .exp {
-    background-color: white;
+    background-color: #AAEEFF;
     height: 200px;
-    border-color: green;
+    border-color: darkslategrey;
     border-style: outset;
     border-width: thick;
     margin-top: 10px;
@@ -89,19 +100,25 @@ button:hover {
 }
 
 .portef {
-    height: 100px;
-    border-width: 4px;
-    border-color: black;
-    border-style: ridge;
-    width: 50vw;
+    background-color: #AAFF99;
+    height: 200px;
+    border-color: darkslategrey;
+    border-style: outset;
+    border-width: thick;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1%;
 }
 
 .loisir {
-    height: 100px;
-    border-width: 4px;
-    border-color: black;
-    border-style: ridge;
-    margin: 10px;
+    background-color: #AAEEFF;
+    height: 200px;
+    border-color: darkslategrey;
+    border-style: outset;
+    border-width: thick;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1%;
 }
 
 .container-fluid {
@@ -120,17 +137,25 @@ button:hover {
 }
 
 #accueil {
-    background-color: green;
+    min-height: 500px;
+    background-image: url(../img/green_city.jpg);
+    background-size: contain;
 }
 
 #experience {
-    background-color: blue;
+    min-height: 700px;
+    background-image: url(../img/blue_binary.jpg);
+    background-size: contain;
 }
 
 #portefolio {
-    background-color: green;
+    min-height: 500px;
+    background-image: url(../img/green_city.jpg);
+    background-size: contain;
 }
 
 #loisirs {
-    background-color: blue;
+    min-height: 500px;
+    background-image: url(../img/blue_binary.jpg);
+    background-size: contain;
 }
