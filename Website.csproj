@@ -57,6 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\blue_binary.jpg" />
+    <Content Include="img\cardboardutopia.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\green_city.jpg" />
+    <Content Include="img\linkedin.png" />
+    <Content Include="img\minecraft.png" />
+    <Content Include="img\togethr.png" />
+    <Content Include="Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.min.map" />
+    <Content Include="fonts\Offside-Regular.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,9 +86,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\me.jpg" />
     <Content Include="index.html" />
-    <Content Include="js\main.js" />
-    <Content Include="js\plugin.js" />
-    <Content Include="js\vendor\modernizr-2.6.2.min.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -88,15 +96,15 @@
     <Content Include="CNAME" />
     <Content Include="README.md" />
     <Content Include="img\gitkeep" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="robots.txt" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\plugin.js" />
+    <Content Include="Scripts\vendor\modernizr-2.6.2.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +126,8 @@
           <DevelopmentServerPort>9475</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:9475/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:9475/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

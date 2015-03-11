@@ -61,6 +61,11 @@ button:hover {
     border-color: #359173;
 }
 
+@font-face {
+    font-family: Offside;
+    src: url(../fonts/Offside-Regular.ttf);
+}
+
 .titre {
     color: black;
     border-width: thin;
@@ -70,6 +75,7 @@ button:hover {
     background-color: white;
     display: inline-block;
     padding: 0.6%;
+    font-family: Offside;
 }
 
 .active {
@@ -106,6 +112,7 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 1%;
+    padding-bottom: 2%;
 }
 
 .loisir {
@@ -127,6 +134,12 @@ button:hover {
 .imageOnClick {
     height: 32px;
     width: 32px;
+}
+
+.imageOnClick-linkedin {
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 #messageaccueil {
